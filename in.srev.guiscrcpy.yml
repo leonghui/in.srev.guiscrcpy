@@ -24,6 +24,7 @@ finish-args:
   - "--share=ipc"
   - "--socket=x11"
   - "--socket=wayland"
+  - "--socket=pulseaudio"
   - "--device=all"
   - "--persist=.android"
 
@@ -37,14 +38,14 @@ modules:
       - --buildtype=release
       - --strip
       - -Db_lto=true
-      - -Dprebuilt_server=scrcpy-server-v1.24
+      - -Dprebuilt_server=scrcpy-server-v2.1.1
     sources:
-      - type: archive
-        url: https://github.com/Genymobile/scrcpy/archive/refs/tags/v1.24.tar.gz
-        sha256: e3054ad453ac577b941f8df0eabc94e842affc6e1d10ba8d21cededfa2eacc73
+      - type: git
+        url: https://github.com/Genymobile/scrcpy
+        sha256: d391fc3b695679f4770ed2e3950b135ebbda2f27
       - type: file
-        url: https://github.com/Genymobile/scrcpy/releases/download/v1.24/scrcpy-server-v1.24
-        sha256: ae74a81ea79c0dc7250e586627c278c0a9a8c5de46c9fb5c38c167fb1a36f056
+        url: https://github.com/Genymobile/scrcpy/releases/download/v2.1.1/scrcpy-server-v2.1.1
+        sha256: 9558db6c56743a1dc03b38f59801fb40e91cc891f8fc0c89e5b0b067761f148e
 
   - name: adb
     buildsystem: simple
