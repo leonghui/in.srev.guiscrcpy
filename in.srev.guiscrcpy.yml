@@ -53,8 +53,8 @@ modules:
       - install -D adb /app/bin/adb
     sources:
       - type: archive
-        url: https://dl.google.com/android/repository/platform-tools_r32.0.0-linux.zip
-        sha256: b10f0e159f11aa08437f2e612c91e52616b8429e9d3b8c2d230456f0edd394e6
+        url: https://dl.google.com/android/repository/platform-tools_r34.0.4-linux.zip
+        sha256: f2eee6e8220f3dfde6e1acc93c5b25d3d8bd215c0b03585b21665f1ea30d66ba
 
   - generated-poetry-sources.json
 
